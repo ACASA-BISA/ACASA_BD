@@ -583,7 +583,7 @@ function TestHome(props) {
             }}>
 
             <div style={{ backgroundColor: theme.palette.mode === "dark" ? "#25292e" : "#ffffff" }}>
-                <Box sx={{ marginTop: "85px", display: { xs: "none", md: "block" } }}>
+                <Box sx={{ marginTop: "85px", display: "block" }}>
 
                     <Paper sx={{ position: "relative", width: "100vw", height: "100vh", overflow: "hidden" }}>
                         {/* Optional loading logic with thumbnail, if needed */}
@@ -918,7 +918,7 @@ function TestHome(props) {
                 </Box>
 
 
-                <Box
+                {/*<Box
                     sx={{
                         marginTop: "80px",
                         width: "100%",
@@ -938,7 +938,7 @@ function TestHome(props) {
                     >
                         <PersonalVideoIcon style={{ fontSize: 40 }} /> This website is designed for desktop. Please view in a bigger screen.
                     </Typography>
-                </Box>
+                </Box>*/}
             </div>
 
 

@@ -25,16 +25,32 @@ function createData(imgSrc, imgAlt, title, author, link, keywords = [], date) {
 
 const data = [
   createData(
-    "/Blog-10.jpg",
+    "/Blog-14.jpeg",
     "Blog 1",
+    "Finding resilience in the rains of Nawalapitiya, Kandy",
+    "Riya Gupta, Communications Officer, BISA",
+    "https://bisa.org/finding-resilience-in-the-rains-of-nawalapitiya-kandy/",
+    ["Women farmers", "climate", "resilience"]
+  ),
+  createData(
+    "/Blog-15.jpg",
+    "Blog 2",
+    "Driving agricultural transformation through digital innovation",
+    "Prasun Gangopadhyay, Borlaug Institute for South Asia (BISA)",
+    "https://bisa.org/driving-agricultural-transformation-through-digital-innovation/",
+    ["Digital agriculture", "remote sensing"]
+  ),
+  createData(
+    "/Blog-10.jpg",
+    "Blog 3",
     "Building capabilities of medium and large-scale Sri Lankan maize growers in agricultural risk management",
     "ASM Roshan, Agribusiness Development Centre, Department of Agriculture, Sri Lanka, and WMUK Rathnayake, Natural Resources Management Centre (NRMC), Department of Agriculture, Sri Lanka",
     "https://bisa.org/building-capabilities-of-medium-and-large-scale-sri-lankan-maize-growers-in-agricultural-risk-management/",
-    ["Maize,", "agribusiness"],
+    ["Maize,", "agribusiness"]
   ),
   createData(
     "/Blog-11.jpg",
-    "Blog 2",
+    "Blog 4",
     "ACASA for empowering women-led social entrepreneurs in Nepal: Building climate-resilient forage for a sustainable livestock ecosystem",
     "Bhola Shrestha, Heifer International, Nepal, and Sunita Sanjyal, Nepal Agricultural Research Council, Nepal",
     "https://bisa.org/acasa-for-empowering-women-led-social-entrepreneurs-in-nepal-building-climate-resilient-forage-for-a-sustainable-livestock-ecosystem/",
@@ -42,13 +58,13 @@ const data = [
   ),
   createData(
     "/Blog-13.jpg",
-    "Blog 3",
+    "Blog 5",
     "Strengthening the model of “Adaptation Clinic” through data-driven local level adaptation planning in Bangladesh",
     "Tausif Ahmed Qurashi, BRAC, Bangladesh, and Md. Abdus Salam, Bangladesh Agricultural Research Council (BARC), Bangladesh",
     "https://bisa.org/strengthening-the-model-of-adaptation-clinic-through-data-driven-local-level-adaptation-planning-in-bangladesh/",
     ["Adaptation,", "local-level planning"]
   ),
-  createData("blognew1.png", "Blog 4", "Greater successes through NARS partnerships", "Tess Russo, BMGF, Seattle, USA", "https://bisa.org/greater-successes-through-nars-partnerships/", [
+  createData("blognew1.png", "Blog 6", "Greater successes through NARS partnerships", "Tess Russo, BMGF, Seattle, USA", "https://bisa.org/greater-successes-through-nars-partnerships/", [
     "Partnership,",
     "NARS,",
     "ACASA,",
@@ -56,7 +72,7 @@ const data = [
   ]),
   createData(
     "/blognew2.jpeg",
-    "Blog 5",
+    "Blog 7",
     "Gridded crop modelling to simulate impacts of climate change and adaptation benefits in ACASA",
     "Anooja Thomas, University of Florida, USA; Apurbo K Chaki, BARI, Bangladesh; Gerrit Hoogenboom, University of Florida, USA; and S Naresh Kumar, ICAR-IARI, India",
     "https://bisa.org/gridded-crop-modelling-to-simulate-impacts-of-climate-change-and-adaptation-benefits-in-acasa/",
@@ -64,7 +80,7 @@ const data = [
   ),
   createData(
     "/blognew3.png",
-    "Blog 6",
+    "Blog 8",
     "Harnessing econometric and statistical tools to support climate-resilient agriculture",
     "Kaushik Bora, BISA-CIMMYT, India and Prem Chand, ICAR-NIAP, India",
     "https://bisa.org/harnessing-econometric-and-statistical-tools-to-support-climate-resilient-agriculture/",
@@ -72,7 +88,7 @@ const data = [
   ),
   createData(
     "/blognew4.png",
-    "Blog 7",
+    "Blog 9",
     "Unlocking insights from literature: Exploring adaptation options in ACASA",
     "Aniket Deo, BISA-CIMMYT, India; Niveta Jain, ICAR-IARI, India; Roshan B Ojha, NARC, Nepal; and Sayla Khandoker, Bangladesh",
     "https://bisa.org/unlocking-insights-from-literature-exploring-adaptation-options-in-acasa/",
@@ -80,7 +96,7 @@ const data = [
   ),
   createData(
     "/Blog-5.jpg",
-    "Blog 8",
+    "Blog 10",
     "A new Climate Adaptation Atlas to safeguard South Asian agriculture",
     "Bram Govaerts, DG, CIMMYT & BISA and Arun Kumar Joshi, CIMMYT Asia Regional Representative and MD BISA",
     "https://www.cimmyt.org/blogs/a-new-climate-adaptation-atlas-to-safeguard-south-asian-agriculture/",
@@ -88,7 +104,7 @@ const data = [
   ),
   createData(
     "/Blog-1.jpg",
-    "Blog 9",
+    "Blog 11",
     "Adaptation Atlas is a positive step towards climate resilient agriculture",
     "Himanshu Pathak, Secretary (DARE) and Director General - ICAR, India",
     "https://www.cimmyt.org/blogs/adaptation-atlas-is-a-positive-step-towards-climate-resilient-agriculture/",
@@ -96,7 +112,7 @@ const data = [
   ),
   createData(
     "/Blog-2.jpg",
-    "Blog 10",
+    "Blog 12",
     "Bangladesh to improve risk characterization at a granular level with Atlas",
     "Shaikh Mohammad Bokhtiar, Executive Chairman, BARC, Bangladesh",
     "https://www.cimmyt.org/blogs/bangladesh-to-improve-risk-characterization-at-a-granular-level-with-atlas/",
@@ -104,7 +120,7 @@ const data = [
   ),
   createData(
     "/Blog-3.jpg",
-    "Blog 11",
+    "Blog 13",
     "Atlas crucial to strengthen Nepal’s capacity to cope with climate change",
     "Dhruba Raj Bhattarai, Executive Director, NARC, Nepal",
     "https://www.cimmyt.org/blogs/atlas-crucial-to-strengthen-nepals-capacity-to-cope-with-climate-change/",
@@ -112,7 +128,7 @@ const data = [
   ),
   createData(
     "/Blog-4.jpg",
-    "Blog 12",
+    "Blog 14",
     "Climate Adaptation Atlas will support evidence-based solutions in Sri Lanka",
     "P. Malathy, DG-Agriculture, Sri Lanka",
     "https://www.cimmyt.org/news/climate-adaptation-atlas-will-support-evidence-based-solutions-in-sri-lanka/",
@@ -130,111 +146,111 @@ export default function Card_Posts() {
 
   return (
     <>
-    <div style={{ marginLeft: "70px", marginTop: "15px", marginBottom: "15px" }}>
-      <div
-        className="full-width-container"
-        style={{
-          position: "relative",
-          width: "95%",
-          minHeight: "400px",
-          overflow: "hidden",
-        }}
-      >
-        {/* Background Layer with Blur & Mask */}
+      <div style={{ marginLeft: "70px", marginTop: "15px", marginBottom: "15px" }}>
         <div
+          className="full-width-container"
           style={{
-            position: "absolute",
-            inset: 0,
-            backgroundImage: "url(acasa_post_banner3.jpg)",
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-            WebkitMaskImage: "linear-gradient(to right, rgba(0,0,0,1) 50%, rgba(0,0,0,0) 100%)",
-            maskImage: "linear-gradient(to right, rgba(0,0,0,1) 50%, rgba(0,0,0,0) 100%)",
-            zIndex: 0, // Keeps it behind the text
+            position: "relative",
+            width: "95%",
+            minHeight: "400px",
+            overflow: "hidden",
           }}
-        />
-
-        <Typography
-          sx={(theme) => ({
-            position: "absolute",
-            bottom: "1px",
-            right: "1px",
-            fontSize: "12px",
-            fontFamily: "revert",
-            color: theme.palette.mode === "dark" ? "#e0e0e0" : "#1b1f23",
-          })}
         >
-          ©ACASA-BISA
-        </Typography>
-
-        {/* Image */}
-
-        <Typography
-          className="banner-title"
-          sx={(theme) => ({
-            color: theme.palette.mode === "dark" ? "#000" : "#fff",
-            fontSize: "40px",
-            fontWeight: "bold",
-            fontFamily: "revert",
-            WebkitMaskImage: "linear-gradient(to right, rgba(0,0,0,1) 20%, rgba(0,0,0,0) 100%)",
-            maskImage: "linear-gradient(to right, rgba(0,0,0,1) 20%, rgba(0,0,0,0) 100%)",
-            paddingLeft: "10px",
-          })}
-        >
-          ACASA Posts
-        </Typography>
-
-        {/* Animated Shape & Slogan */}
-        <div className="slogan-wrapper">
-          <motion.div
-            className="animated-shape"
-            style={{ transform: "translateY(-60px)" }}
-            animate={{
-              scale: [1, 2, 2, 1, 1],
-              rotate: [0, 0, 180, 180, 0],
-              borderRadius: ["0%", "0%", "50%", "50%", "0%"],
-            }}
-            transition={{
-              duration: 4,
-              ease: "easeInOut",
-              times: [0, 0.2, 0.5, 0.8, 1],
-              repeat: Infinity,
-              repeatDelay: 1,
+          {/* Background Layer with Blur & Mask */}
+          <div
+            style={{
+              position: "absolute",
+              inset: 0,
+              backgroundImage: "url(acasa_post_banner3.jpg)",
+              backgroundSize: "cover",
+              backgroundPosition: "center",
+              WebkitMaskImage: "linear-gradient(to right, rgba(0,0,0,1) 50%, rgba(0,0,0,0) 100%)",
+              maskImage: "linear-gradient(to right, rgba(0,0,0,1) 50%, rgba(0,0,0,0) 100%)",
+              zIndex: 0, // Keeps it behind the text
             }}
           />
 
-          {/* Slogan Text */}
-          <motion.div className="slogan-text" style={{ transform: "translateY(-60px)" }} initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 1, duration: 1 }}>
-            <Typography
-              sx={(theme) => ({
-                fontFamily: "revert",
-                fontSize: "50px",
-                fontWeight: "bold",
-                color: theme.palette.mode === "dark" ? "#e0e0e0" : "#222529", // Main text color
-                textShadow: theme.palette.mode === "dark" ? "8px 0px 6px rgba(30, 30, 30, 0.8)" : "8px 0px 6px rgba(30, 30, 30, 0.4)",
-              })}
-            >
-              Insights
-            </Typography>
-            <Typography sx={(theme) => ({ fontFamily: "revert", fontSize: "24px", fontWeight: "bold", color: theme.palette.mode === "dark" ? "#e0e0e0" : "#222529" })}>
-              from our global experts on
-            </Typography>
-            <Typography sx={(theme) => ({ fontFamily: "revert", fontSize: "24px", fontWeight: "bold", color: theme.palette.mode === "dark" ? "#00C853" : "#4d7553", display: "inline" })}>
-              climate
-            </Typography>
-            <Typography
-              sx={(theme) => ({ fontFamily: "revert", fontSize: "24px", fontWeight: "bold", color: theme.palette.mode === "dark" ? "#e0e0e0" : "#222529", display: "inline", marginLeft: 1 })}
-            >
-              and
-            </Typography>
-            <Typography
-              sx={(theme) => ({ fontFamily: "revert", fontSize: "24px", fontWeight: "bold", color: theme.palette.mode === "dark" ? "#00C853" : "#4d7553", display: "inline", marginLeft: 1 })}
-            >
-              South Asian agriculture
-            </Typography>
-          </motion.div>
+          <Typography
+            sx={(theme) => ({
+              position: "absolute",
+              bottom: "1px",
+              right: "1px",
+              fontSize: "12px",
+              fontFamily: "revert",
+              color: theme.palette.mode === "dark" ? "#e0e0e0" : "#1b1f23",
+            })}
+          >
+            ©ACASA-BISA
+          </Typography>
+
+          {/* Image */}
+
+          <Typography
+            className="banner-title"
+            sx={(theme) => ({
+              color: theme.palette.mode === "dark" ? "#000" : "#fff",
+              fontSize: "40px",
+              fontWeight: "bold",
+              fontFamily: "revert",
+              WebkitMaskImage: "linear-gradient(to right, rgba(0,0,0,1) 20%, rgba(0,0,0,0) 100%)",
+              maskImage: "linear-gradient(to right, rgba(0,0,0,1) 20%, rgba(0,0,0,0) 100%)",
+              paddingLeft: "10px",
+            })}
+          >
+            ACASA Posts
+          </Typography>
+
+          {/* Animated Shape & Slogan */}
+          <div className="slogan-wrapper">
+            <motion.div
+              className="animated-shape"
+              style={{ transform: "translateY(-60px)" }}
+              animate={{
+                scale: [1, 2, 2, 1, 1],
+                rotate: [0, 0, 180, 180, 0],
+                borderRadius: ["0%", "0%", "50%", "50%", "0%"],
+              }}
+              transition={{
+                duration: 4,
+                ease: "easeInOut",
+                times: [0, 0.2, 0.5, 0.8, 1],
+                repeat: Infinity,
+                repeatDelay: 1,
+              }}
+            />
+
+            {/* Slogan Text */}
+            <motion.div className="slogan-text" style={{ transform: "translateY(-60px)" }} initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 1, duration: 1 }}>
+              <Typography
+                sx={(theme) => ({
+                  fontFamily: "revert",
+                  fontSize: "50px",
+                  fontWeight: "bold",
+                  color: theme.palette.mode === "dark" ? "#e0e0e0" : "#222529", // Main text color
+                  textShadow: theme.palette.mode === "dark" ? "8px 0px 6px rgba(30, 30, 30, 0.8)" : "8px 0px 6px rgba(30, 30, 30, 0.4)",
+                })}
+              >
+                Insights
+              </Typography>
+              <Typography sx={(theme) => ({ fontFamily: "revert", fontSize: "24px", fontWeight: "bold", color: theme.palette.mode === "dark" ? "#e0e0e0" : "#222529" })}>
+                from our global experts on
+              </Typography>
+              <Typography sx={(theme) => ({ fontFamily: "revert", fontSize: "24px", fontWeight: "bold", color: theme.palette.mode === "dark" ? "#00C853" : "#4d7553", display: "inline" })}>
+                climate
+              </Typography>
+              <Typography
+                sx={(theme) => ({ fontFamily: "revert", fontSize: "24px", fontWeight: "bold", color: theme.palette.mode === "dark" ? "#e0e0e0" : "#222529", display: "inline", marginLeft: 1 })}
+              >
+                and
+              </Typography>
+              <Typography
+                sx={(theme) => ({ fontFamily: "revert", fontSize: "24px", fontWeight: "bold", color: theme.palette.mode === "dark" ? "#00C853" : "#4d7553", display: "inline", marginLeft: 1 })}
+              >
+                South Asian agriculture
+              </Typography>
+            </motion.div>
+          </div>
         </div>
-      </div>
       </div>
 
       <Box
@@ -243,19 +259,26 @@ export default function Card_Posts() {
           display: "flex",
           flexDirection: "column",
           gap: "15px",
-          backgroundColor: theme.palette.mode === "dark" ? "#2f6742" : "rgba(75, 160, 70, 0.8)"
+          backgroundColor: theme.palette.mode === "dark" ? "#2f6742" : "rgba(75, 160, 70, 0.8)",
         })}
       >
-        <Box className="blog-container" sx={(theme) => ({/*backgroundColor: theme.palette.mode === "dark" ? "#2f6742" : "#e0e0e0"*/})}>
+        <Box
+          className="blog-container"
+          sx={(theme) => ({
+            /*backgroundColor: theme.palette.mode === "dark" ? "#2f6742" : "#e0e0e0"*/
+          })}
+        >
           {data.map((item, index) => (
             <BlogCard key={index} imgSrc={item.imgSrc} imgAlt={item.imgAlt} title={item.title} link={item.link} keywords={item.keywords} date={item.date} />
           ))}
         </Box>
-        </Box>
-        </>
-  )};
+      </Box>
+    </>
+  );
+}
 
-        {/*
+{
+  /*
         <Card
           sx={(theme) => ({
             "maxWidth": "30%",
@@ -304,10 +327,14 @@ export default function Card_Posts() {
             </a>
           </CardContent>
         </Card>
-        {/* The component uses a div with styles for margin. */}
-        {/* Inner content is wrapped in a Box component with flexbox for responsive layout (different screen sizes). */}
+        {/* The component uses a div with styles for margin. */
+}
+{
+  /* Inner content is wrapped in a Box component with flexbox for responsive layout (different screen sizes). */
+}
 
-        {/*
+{
+  /*
         <Card
           sx={(theme) => ({
             "maxWidth": "30%",
@@ -359,8 +386,10 @@ export default function Card_Posts() {
         {/* More Blogs" Button (Conditional):
 A Box component is conditionally rendered based on the blogs state.
 If blogs is false, it displays a button "More Blogs" with a down arrow icon.
-Clicking the button triggers a function using onClick that sets blogs to true (showing more posts). */}
-        {/*
+Clicking the button triggers a function using onClick that sets blogs to true (showing more posts). */
+}
+{
+  /*
         <Card
           sx={(theme) => ({
             "maxWidth": "30%",
@@ -726,7 +755,8 @@ Clicking the button triggers a function using onClick that sets blogs to true (s
                 </Button>
               </a>
             </CardContent>
-          </Card> */}
+          </Card> */
+}
 
 // First Row of Blog Posts:
 
