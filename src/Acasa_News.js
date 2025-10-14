@@ -21,7 +21,7 @@ export default function News() {
         sx={{
           display: "flex",
           flexDirection: "column",
-          marginX: "70px",
+          marginX: { xs: "20px", sm: "40px", md: "70px" },
           marginY: "20px",
           gap: "20px",
         }}
@@ -42,7 +42,15 @@ export default function News() {
             },
           })}
         >
-          <Typography sx={(theme) => ({ display: "inline", fontFamily: "revert", fontSize: "20px", fontWeight: "bold", color: theme.palette.mode === "dark" ? "#66bb6a" : "#388e3c" })}>
+          <Typography
+            sx={(theme) => ({
+              display: "inline",
+              fontFamily: "revert",
+              fontSize: { xs: "16px", sm: "18px", md: "20px" },
+              fontWeight: "bold",
+              color: theme.palette.mode === "dark" ? "#66bb6a" : "#388e3c",
+            })}
+          >
             Explore ACASA’s updates and progress through our bi-annual newsletter:
           </Typography>
           <Typography
@@ -51,7 +59,7 @@ export default function News() {
               marginLeft: 1,
               fontFamily: "revert",
               fontStyle: "italic",
-              fontSize: "20px",
+              fontSize: { xs: "16px", sm: "18px", md: "20px" },
               fontWeight: "bold",
               color: theme.palette.mode === "dark" ? "#66bb6a" : "#388e3c",
             })}
@@ -60,7 +68,7 @@ export default function News() {
           </Typography>
         </Box>
 
-        <Box sx={{ display: "flex", flexDirection: "row", gap: "1.5rem" }}>
+        <Box sx={{ display: "flex", flexDirection: { xs: "column", md: "row" }, gap: "1.5rem" }}>
           {/* Container for the first news item */}
           <Box
             sx={(theme) => ({
@@ -110,7 +118,7 @@ export default function News() {
                 flexDirection: "column",
                 textAlign: "left",
                 padding: "10px",
-                marginX: "50px",
+                marginX: { xs: "10px", sm: "30px", md: "50px" },
                 marginY: "20px",
               }}
             >
@@ -119,11 +127,12 @@ export default function News() {
                 sx={(theme) => ({
                   color: theme.palette.mode === "dark" ? "#81c784" : "#52911f",
                   fontWeight: "bold",
+                  fontSize: { xs: "16px", sm: "18px", md: "20px" },
                 })}
               >
                 Issue 03
               </Typography>
-              <Typography sx={(theme) => ({ color: theme.palette.text.primary })}>
+              <Typography sx={(theme) => ({ color: theme.palette.text.primary, fontSize: { xs: "14px", sm: "15px" } })}>
                 Dive into ACASA beta version, updated brochure, events, expert blogs, cattle data brief...
                 {/* Link to read more about the first news item */}
                 <Typography
@@ -132,6 +141,7 @@ export default function News() {
                   target="_blank"
                   sx={{
                     "fontWeight": "bold",
+                    "fontSize": { xs: "14px", sm: "15px" },
                     "color": "grey",
                     "textDecoration": "none",
                     "&:hover": {
@@ -147,6 +157,7 @@ export default function News() {
                 sx={(theme) => ({
                   color: theme.palette.mode === "dark" ? "text.secondary" : "#444444",
                   marginTop: "20px",
+                  fontSize: { xs: "13px", sm: "14px" },
                 })}
               >
                 January 2025
@@ -203,7 +214,7 @@ export default function News() {
                 flexDirection: "column",
                 textAlign: "left",
                 padding: "10px",
-                marginX: "50px",
+                marginX: { xs: "10px", sm: "30px", md: "50px" },
                 marginY: "20px",
               }}
             >
@@ -212,11 +223,12 @@ export default function News() {
                 sx={(theme) => ({
                   color: theme.palette.mode === "dark" ? "#81c784" : "#52911f",
                   fontWeight: "bold",
+                  fontSize: { xs: "16px", sm: "18px", md: "20px" },
                 })}
               >
                 Issue 02
               </Typography>
-              <Typography sx={(theme) => ({ color: theme.palette.text.primary })}>
+              <Typography sx={(theme) => ({ color: theme.palette.text.primary, fontSize: { xs: "14px", sm: "15px" } })}>
                 Test version of ACASA to be launched, new partnerships, events, expert blogs, rice data brief, media presence...
                 {/* Link to read more about the second news item */}
                 <Typography
@@ -225,6 +237,7 @@ export default function News() {
                   target="_blank"
                   sx={{
                     "fontWeight": "bold",
+                    "fontSize": { xs: "14px", sm: "15px" },
                     "color": "grey",
                     "textDecoration": "none",
                     "&:hover": {
@@ -240,6 +253,7 @@ export default function News() {
                 sx={(theme) => ({
                   color: theme.palette.mode === "dark" ? "text.secondary" : "#444444",
                   marginTop: "20px",
+                  fontSize: { xs: "13px", sm: "14px" },
                 })}
               >
                 June 2024
@@ -296,7 +310,7 @@ export default function News() {
                 flexDirection: "column",
                 textAlign: "left",
                 padding: "10px",
-                marginX: "50px",
+                marginX: { xs: "10px", sm: "30px", md: "50px" },
                 marginY: "20px",
               }}
             >
@@ -305,11 +319,12 @@ export default function News() {
                 sx={(theme) => ({
                   color: theme.palette.mode === "dark" ? "#81c784" : "#52911f",
                   fontWeight: "bold",
+                  fontSize: { xs: "16px", sm: "18px", md: "20px" },
                 })}
               >
                 Issue 01
               </Typography>
-              <Typography sx={(theme) => ({ color: theme.palette.text.primary })}>
+              <Typography sx={(theme) => ({ color: theme.palette.text.primary, fontSize: { xs: "14px", sm: "15px" } })}>
                 ACASA inaugural newsletter - our mission, vision, approach, events, partner expectations, advisory panel, data and methods, and media presence...
                 {/* Link to read more about the third news item */}
                 <Typography
@@ -318,6 +333,7 @@ export default function News() {
                   target="_blank"
                   sx={{
                     "fontWeight": "bold",
+                    "fontSize": { xs: "14px", sm: "15px" },
                     "color": "grey",
                     "textDecoration": "none",
                     "&:hover": {
@@ -333,6 +349,7 @@ export default function News() {
                 sx={(theme) => ({
                   color: theme.palette.mode === "dark" ? "text.secondary" : "#444444",
                   marginTop: "20px",
+                  fontSize: { xs: "13px", sm: "14px" },
                 })}
               >
                 November 2023

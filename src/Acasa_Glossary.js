@@ -21,20 +21,20 @@ const glossaryData = {
     },
     {
       term: "Additional energy supplementation",
-      definition: "Additional energy supplementation during climatic stress period"
+      definition: "Additional energy supplementation during climatic stress period",
     },
     {
       term: "Ad lib cool drinking water",
-      definition: "Provision of cold drinking water without restriction"
+      definition: "Provision of cold drinking water without restriction",
     },
     {
       term: "Adoption of climate resilient breeds",
-      definition: "Selective breeding and upgrading to climate-resilient breeds"
+      definition: "Selective breeding and upgrading to climate-resilient breeds",
     },
     {
       term: "ART Tools",
-      definition: "Use of assisted reproductive technologies for improved fertility, genetics, labour, and herd health of pigs measure"
-    }
+      definition: "Use of assisted reproductive technologies for improved fertility, genetics, labour, and herd health of pigs measure",
+    },
   ],
   B: [
     {
@@ -64,8 +64,7 @@ const glossaryData = {
     },
     {
       term: "Crop water deficit index",
-      definition:
-        "It is an agricultural drought indicator that quantifies the water deficit experienced by crops by integrating the balance between crop water supply and demand.",
+      definition: "It is an agricultural drought indicator that quantifies the water deficit experienced by crops by integrating the balance between crop water supply and demand.",
     },
     {
       term: "Commodity specific analysis",
@@ -98,16 +97,16 @@ const glossaryData = {
     },
     {
       term: "Control of ectoparasites and other vectors",
-      definition: "Physical and chemical controls of ectoparasites and other vectors"
+      definition: "Physical and chemical controls of ectoparasites and other vectors",
     },
     {
       term: "Climate information services (including insurance)",
-      definition: "Protects against financial loss from climate impacts"
+      definition: "Protects against financial loss from climate impacts",
     },
     {
       term: "Climatology",
-      definition: "The long-term average of temperature and precipitation patterns, used to characterize current and project future climate conditions under climate change scenarios."
-    }
+      definition: "The long-term average of temperature and precipitation patterns, used to characterize current and project future climate conditions under climate change scenarios.",
+    },
   ],
   D: [
     {
@@ -136,8 +135,8 @@ const glossaryData = {
     },
     {
       term: "Deworming",
-      definition: "Control of endoparasites"
-    }
+      definition: "Control of endoparasites",
+    },
   ],
   E: [
     {
@@ -164,8 +163,8 @@ const glossaryData = {
     },
     {
       term: "Estrous confirmation and synchronisation",
-      definition: "A process that uses hormones to bring female mammals into heat at a predetermined time"
-    }
+      definition: "A process that uses hormones to bring female mammals into heat at a predetermined time",
+    },
   ],
   F: [
     {
@@ -175,16 +174,17 @@ const glossaryData = {
     },
     {
       term: "Fodder conservation",
-      definition: "Preserving fodder to meet the demand during climatic stress period"
+      definition: "Preserving fodder to meet the demand during climatic stress period",
     },
     {
       term: "Fat supplementation",
-      definition: "To increase the overall energy density of the feed, improve nutrient absorption, enhance palatability, and sometimes to help manage heat stress, all while providing essential fatty acids necessary for the bird's health"
+      definition:
+        "To increase the overall energy density of the feed, improve nutrient absorption, enhance palatability, and sometimes to help manage heat stress, all while providing essential fatty acids necessary for the bird's health",
     },
     {
       term: "Feed/fodder",
-      definition: "Crop residue for animal usage in tons per grid. We used Global Dataset (for the year 2021) for the Production and Usage of cereal residues derived from Smerald et al., 2023."
-    }
+      definition: "Crop residue for animal usage in tons per grid. We used Global Dataset (for the year 2021) for the Production and Usage of cereal residues derived from Smerald et al., 2023.",
+    },
   ],
   G: [
     {
@@ -201,8 +201,9 @@ const glossaryData = {
     },
     {
       term: "Grassland and Silvi-pasture management",
-      definition: "Maintain and optimize the productivity of grasslands, often by integrating trees or shrubs (silvipasture) into the grazing area, aiming to improve forage production, soil health, and biodiversity while supporting livestock grazing simultaneously"
-    }
+      definition:
+        "Maintain and optimize the productivity of grasslands, often by integrating trees or shrubs (silvipasture) into the grazing area, aiming to improve forage production, soil health, and biodiversity while supporting livestock grazing simultaneously",
+    },
   ],
   H: [
     {
@@ -212,7 +213,7 @@ const glossaryData = {
     },
     {
       term: "Hazard",
-      definition: "Hazard is an event or circumstance that can harm the commodity. In this Atlas we are considering climate induced hazards."
+      definition: "Hazard is an event or circumstance that can harm the commodity. In this Atlas we are considering climate induced hazards.",
     },
     {
       term: "Heating management",
@@ -230,8 +231,8 @@ const glossaryData = {
     },
     {
       term: "Hazard proof shelters",
-      definition: "Appropriate shelter to protect animals from natural hazards"
-    }
+      definition: "Appropriate shelter to protect animals from natural hazards",
+    },
   ],
   I: [
     {
@@ -249,8 +250,8 @@ const glossaryData = {
     },
     {
       term: "Increased proportion of green fodder",
-      definition: "Provision for perennial grass, pasture legume, fodder trees, cultivated grasses"
-    }
+      definition: "Provision for perennial grass, pasture legume, fodder trees, cultivated grasses",
+    },
   ],
   J: [
     {
@@ -277,7 +278,7 @@ const glossaryData = {
     },
     {
       term: "Millets",
-      definition: "Millet is planted in multiple seasons in different countries. Here this analysis is for monsoon season (also known as 'Kharif' in India and Nepal)."
+      definition: "Millet is planted in multiple seasons in different countries. Here this analysis is for monsoon season (also known as 'Kharif' in India and Nepal).",
     },
     {
       term: "Micro-irrigation",
@@ -286,44 +287,46 @@ const glossaryData = {
     },
     {
       term: "Modification of shed, ventilation and cooling",
-      definition: "Microclimate modification by modifying shelter, improved ventilation and by adjusting roof heights"
+      definition: "Microclimate modification by modifying shelter, improved ventilation and by adjusting roof heights",
     },
     {
       term: "Modify shelters for cold stress",
-      definition: "Microclimate modification by modifying shelters for protection against cold stress"
+      definition: "Microclimate modification by modifying shelters for protection against cold stress",
     },
     {
       term: "Micro-climate modification",
-      definition: "Microclimate modification by modifying shelter, improved ventilation and by adjusting roof heights"
+      definition: "Microclimate modification by modifying shelter, improved ventilation and by adjusting roof heights",
     },
     {
       term: "Mechanical cooling",
-      definition: "Cooling using misting, fogging, sprinklers, fans, exhaust"
+      definition: "Cooling using misting, fogging, sprinklers, fans, exhaust",
     },
     {
       term: "Micronutrient and probiotics",
-      definition: "Micronutrient and probiotics for health and nutritional needs during climatic stress period"
+      definition: "Micronutrient and probiotics for health and nutritional needs during climatic stress period",
     },
     {
       term: "Modification in feeding practices",
-      definition: "Adjust feeding times and grazing patterns to minimize climate stress"
+      definition: "Adjust feeding times and grazing patterns to minimize climate stress",
     },
     {
       term: "Mineral mixture supplementation",
-      definition: "Blend of essential minerals to correct mineral deficiencies during climatic stress period and also  to improve productivity"
+      definition: "Blend of essential minerals to correct mineral deficiencies during climatic stress period and also  to improve productivity",
     },
     {
       term: "Micro-nutrient and amino acid supplementation",
-      definition: "Micro-nutrient and amino acid supplementation to optimize growth, egg production, and overall health during climatic stress period"
+      definition: "Micro-nutrient and amino acid supplementation to optimize growth, egg production, and overall health during climatic stress period",
     },
     {
       term: "Maximum temperature",
-      definition: "Maximum temperature observed during a specific period, averaged over the crop duration for crops and over the entire year for livestock. For both, this value is calculated for a 30-year baseline period and projected for future climate scenarios."
+      definition:
+        "Maximum temperature observed during a specific period, averaged over the crop duration for crops and over the entire year for livestock. For both, this value is calculated for a 30-year baseline period and projected for future climate scenarios.",
     },
     {
       term: "Minimum temperature",
-      definition: "Minimum temperature observed during a specific period, averaged over the crop duration for crops and over the entire year for livestock. For both, this value is calculated for a 30-year baseline period and projected for future climate scenarios."
-    }
+      definition:
+        "Minimum temperature observed during a specific period, averaged over the crop duration for crops and over the entire year for livestock. For both, this value is calculated for a 30-year baseline period and projected for future climate scenarios.",
+    },
   ],
   N: [
     {
@@ -372,8 +375,7 @@ const glossaryData = {
     },
     {
       term: "Pigeonpea",
-      definition:
-        "Pigeonpea is planted in in multiple seasons in different countries. This analysis is for monsoon season (also known as 'Kharif' in India).",
+      definition: "Pigeonpea is planted in in multiple seasons in different countries. This analysis is for monsoon season (also known as 'Kharif' in India).",
     },
     {
       term: "Potato",
@@ -385,12 +387,12 @@ const glossaryData = {
     },
     {
       term: "Planting trees",
-      definition: "Provide a way for shade, food, and a way to increase the production"
+      definition: "Provide a way for shade, food, and a way to increase the production",
     },
     {
       term: "Parasite control",
-      definition: "Preventing and treating parasites that affect chickens and other birds"
-    }
+      definition: "Preventing and treating parasites that affect chickens and other birds",
+    },
   ],
   Q: [],
   R: [
@@ -477,8 +479,9 @@ const glossaryData = {
     },
     {
       term: "Seasonal rainfall",
-      definition: "For crops, seasonal rainfall refers to the total precipitation occurring during the specific crop duration, which varies by commodity depending on their growing season. For livestock, seasonal rainfall is defined as the total annual sum of precipitation."
-    }
+      definition:
+        "For crops, seasonal rainfall refers to the total precipitation occurring during the specific crop duration, which varies by commodity depending on their growing season. For livestock, seasonal rainfall is defined as the total annual sum of precipitation.",
+    },
   ],
   T: [
     {
@@ -493,8 +496,8 @@ const glossaryData = {
     },
     {
       term: "Thinning of flock",
-      definition: "Removing a portion of a group of chickens/birds from a shed so that the remaining birds have more space"
-    }
+      definition: "Removing a portion of a group of chickens/birds from a shed so that the remaining birds have more space",
+    },
   ],
   U: [
     {
@@ -519,8 +522,8 @@ const glossaryData = {
     },
     {
       term: "Volumetric soil water",
-      definition: "Volumetric Soil Water (VWC) is defined as the ratio of the volume of water contained in a soil of a grid to the total volume of that soil in that grid."
-    }
+      definition: "Volumetric Soil Water (VWC) is defined as the ratio of the volume of water contained in a soil of a grid to the total volume of that soil in that grid.",
+    },
   ],
   W: [
     {
@@ -578,7 +581,7 @@ export default function Glossary() {
   }, [filteredTerms]);
 
   return (
-    <Box sx={{ display: "flex", gap: 3, padding: 3 }}>
+    <Box sx={{ display: "flex", flexDirection: { xs: "column", md: "row" }, gap: 3, padding: 3 }}>
       {showOverlay && (
         <Box
           sx={{
@@ -623,9 +626,9 @@ export default function Glossary() {
         sx={(theme) => ({
           position: "sticky",
           left: 0,
-          top: 175,
-          width: "27%",
-          height: "100vh",
+          top: { xs: "auto", md: 175 },
+          width: { xs: "100%", md: "27%" }, // full width on mobile
+          height: { xs: "auto", md: "100vh" }, // height auto on mobile
           padding: 3,
           backgroundColor: theme.palette.mode === "dark" ? theme.palette.background.paper : "#f9f9f9",
           borderRadius: 2,
@@ -673,10 +676,10 @@ export default function Glossary() {
               variant={selectedLetter === letter ? "contained" : "outlined"}
               onClick={() => setSelectedLetter(selectedLetter === letter ? "" : letter)}
               sx={(theme) => ({
-                "width": "min(8vw, 35px)",
-                "height": "min(8vw, 35px)",
-                "minWidth": "min(8vw, 35px)",
-                "fontSize": "1rem",
+                "width": { xs: "28px", sm: "32px", md: "min(8vw, 35px)" },
+                "height": { xs: "28px", sm: "32px", md: "min(8vw, 35px)" },
+                "minWidth": { xs: "28px", sm: "32px", md: "min(8vw, 35px)" },
+                "fontSize": { xs: "0.7rem", sm: "0.85rem", md: "1rem" },
                 "fontWeight": "bold",
                 "textTransform": "none",
                 "display": "flex",
@@ -796,10 +799,11 @@ export default function Glossary() {
       <Box
         ref={Ref}
         sx={{
-          marginLeft: "1%", // Offset the fixed left section
-          width: "67%", // Take remaining width
-          paddingBottom: "100px", // Ensure space for footer
-        }}
+      marginLeft: { xs: 0, md: "1%" },
+      width: { xs: "100%", md: "67%" }, // full width on mobile
+      paddingBottom: "100px",
+      marginTop: { xs: 3, md: 0 }, // add spacing on mobile
+    }}
       >
         {console.log("Number of terms displayed:", sortedFilteredTerms.length)}
         {sortedFilteredTerms.length > 0 ? (

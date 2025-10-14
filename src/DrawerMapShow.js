@@ -1008,8 +1008,8 @@ export default function DrawerMapShow({ activeBar }) {
     <div>
       <Box
         sx={{
-          display: { xs: "none", md: "block" },
-          bgcolor: (theme) => theme.palette.background.paper, // Background adapts to theme
+          display: "block", // Mobile responsiveness
+          bgcolor: (theme) => theme.palette.background.paper,
         }}
       >
         {(activeBar === "future" || activeBar === "future2" || activeBar === "viewer") && (
@@ -1247,7 +1247,7 @@ export default function DrawerMapShow({ activeBar }) {
           ></AdaptationGlance>
         )}
       </Box>
-      <Box
+      {/*<Box
         sx={{
           marginTop: "80px",
           width: "100%",
@@ -1258,7 +1258,7 @@ export default function DrawerMapShow({ activeBar }) {
         }}
       >
         <Typography>This website is designed for desktop/laptop. Please view in a bigger screen.</Typography>
-      </Box>
+      </Box>*/}
     </div>
   );
 }

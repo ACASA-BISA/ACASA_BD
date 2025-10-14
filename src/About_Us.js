@@ -1523,7 +1523,7 @@ export default function AboutUs() {
                   fontFamily: "revert",
                 })}
               >
-                2. Paresh Shirsath, Scientist, Climate Adaptation
+                2. Paresh Shirsath, Senior Scientist, Climate Adaptation
               </Typography>
               <Typography
                 sx={(theme) => ({
@@ -1620,7 +1620,7 @@ export default function AboutUs() {
         </Box>
       </Box>
       <StickyFooter></StickyFooter>
-      <Box
+      {/*<Box
         sx={{
           marginTop: "80px",
           width: "100%",
@@ -1631,7 +1631,7 @@ export default function AboutUs() {
         }}
       >
         <Typography>This website is designed for desktop. Please view in a bigger screen.</Typography>
-      </Box>
+      </Box>*/}
     </div>
   );
 }

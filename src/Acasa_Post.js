@@ -146,111 +146,139 @@ export default function Card_Posts() {
 
   return (
     <>
-      <div style={{ marginLeft: "70px", marginTop: "15px", marginBottom: "15px" }}>
-        <div
-          className="full-width-container"
-          style={{
-            position: "relative",
-            width: "95%",
-            minHeight: "400px",
-            overflow: "hidden",
+      <div
+        style={{
+          marginLeft: "0px", // Mobile default
+          marginTop: "15px",
+          marginBottom: "15px",
+        }}
+      >
+        <Box
+          sx={{
+            marginLeft: { xs: 0, md: "70px" }, // 70px only for desktop
           }}
         >
-          {/* Background Layer with Blur & Mask */}
           <div
+            className="full-width-container"
             style={{
-              position: "absolute",
-              inset: 0,
-              backgroundImage: "url(acasa_post_banner3.jpg)",
-              backgroundSize: "cover",
-              backgroundPosition: "center",
-              WebkitMaskImage: "linear-gradient(to right, rgba(0,0,0,1) 50%, rgba(0,0,0,0) 100%)",
-              maskImage: "linear-gradient(to right, rgba(0,0,0,1) 50%, rgba(0,0,0,0) 100%)",
-              zIndex: 0, // Keeps it behind the text
+              position: "relative",
+              width: "95%",
+              minHeight: "400px",
+              overflow: "hidden",
             }}
-          />
-
-          <Typography
-            sx={(theme) => ({
-              position: "absolute",
-              bottom: "1px",
-              right: "1px",
-              fontSize: "12px",
-              fontFamily: "revert",
-              color: theme.palette.mode === "dark" ? "#e0e0e0" : "#1b1f23",
-            })}
           >
-            ©ACASA-BISA
-          </Typography>
-
-          {/* Image */}
-
-          <Typography
-            className="banner-title"
-            sx={(theme) => ({
-              color: theme.palette.mode === "dark" ? "#000" : "#fff",
-              fontSize: "40px",
-              fontWeight: "bold",
-              fontFamily: "revert",
-              WebkitMaskImage: "linear-gradient(to right, rgba(0,0,0,1) 20%, rgba(0,0,0,0) 100%)",
-              maskImage: "linear-gradient(to right, rgba(0,0,0,1) 20%, rgba(0,0,0,0) 100%)",
-              paddingLeft: "10px",
-            })}
-          >
-            ACASA Posts
-          </Typography>
-
-          {/* Animated Shape & Slogan */}
-          <div className="slogan-wrapper">
-            <motion.div
-              className="animated-shape"
-              style={{ transform: "translateY(-60px)" }}
-              animate={{
-                scale: [1, 2, 2, 1, 1],
-                rotate: [0, 0, 180, 180, 0],
-                borderRadius: ["0%", "0%", "50%", "50%", "0%"],
-              }}
-              transition={{
-                duration: 4,
-                ease: "easeInOut",
-                times: [0, 0.2, 0.5, 0.8, 1],
-                repeat: Infinity,
-                repeatDelay: 1,
+            {/* Background Layer with Blur & Mask */}
+            <div
+              style={{
+                position: "absolute",
+                inset: 0,
+                backgroundImage: "url(acasa_post_banner3.jpg)",
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+                WebkitMaskImage: "linear-gradient(to right, rgba(0,0,0,1) 50%, rgba(0,0,0,0) 100%)",
+                maskImage: "linear-gradient(to right, rgba(0,0,0,1) 50%, rgba(0,0,0,0) 100%)",
+                zIndex: 0, // Keeps it behind the text
               }}
             />
 
-            {/* Slogan Text */}
-            <motion.div className="slogan-text" style={{ transform: "translateY(-60px)" }} initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 1, duration: 1 }}>
-              <Typography
-                sx={(theme) => ({
-                  fontFamily: "revert",
-                  fontSize: "50px",
-                  fontWeight: "bold",
-                  color: theme.palette.mode === "dark" ? "#e0e0e0" : "#222529", // Main text color
-                  textShadow: theme.palette.mode === "dark" ? "8px 0px 6px rgba(30, 30, 30, 0.8)" : "8px 0px 6px rgba(30, 30, 30, 0.4)",
-                })}
-              >
-                Insights
-              </Typography>
-              <Typography sx={(theme) => ({ fontFamily: "revert", fontSize: "24px", fontWeight: "bold", color: theme.palette.mode === "dark" ? "#e0e0e0" : "#222529" })}>
-                from our global experts on
-              </Typography>
-              <Typography sx={(theme) => ({ fontFamily: "revert", fontSize: "24px", fontWeight: "bold", color: theme.palette.mode === "dark" ? "#00C853" : "#4d7553", display: "inline" })}>
-                climate
-              </Typography>
-              <Typography
-                sx={(theme) => ({ fontFamily: "revert", fontSize: "24px", fontWeight: "bold", color: theme.palette.mode === "dark" ? "#e0e0e0" : "#222529", display: "inline", marginLeft: 1 })}
-              >
-                and
-              </Typography>
-              <Typography
-                sx={(theme) => ({ fontFamily: "revert", fontSize: "24px", fontWeight: "bold", color: theme.palette.mode === "dark" ? "#00C853" : "#4d7553", display: "inline", marginLeft: 1 })}
-              >
-                South Asian agriculture
-              </Typography>
-            </motion.div>
+            <Typography
+              sx={(theme) => ({
+                position: "absolute",
+                bottom: "1px",
+                right: "1px",
+                fontSize: "12px",
+                fontFamily: "revert",
+                color: theme.palette.mode === "dark" ? "#e0e0e0" : "#1b1f23",
+              })}
+            >
+              ©ACASA-BISA
+            </Typography>
+
+            {/* Image */}
+
+            <Typography
+              className="banner-title"
+              sx={(theme) => ({
+                color: theme.palette.mode === "dark" ? "#000" : "#fff",
+                fontSize: { xs: "28px", sm: "40px" },
+                fontWeight: "bold",
+                fontFamily: "revert",
+                WebkitMaskImage: "linear-gradient(to right, rgba(0,0,0,1) 20%, rgba(0,0,0,0) 100%)",
+                maskImage: "linear-gradient(to right, rgba(0,0,0,1) 20%, rgba(0,0,0,0) 100%)",
+                paddingLeft: "10px",
+              })}
+            >
+              ACASA Posts
+            </Typography>
+
+            {/* Animated Shape & Slogan */}
+            <div className="slogan-wrapper">
+              <motion.div
+                className="animated-shape"
+                style={{ transform: "translateY(-60px)" }}
+                animate={{
+                  scale: [1, 2, 2, 1, 1],
+                  rotate: [0, 0, 180, 180, 0],
+                  borderRadius: ["0%", "0%", "50%", "50%", "0%"],
+                }}
+                transition={{
+                  duration: 4,
+                  ease: "easeInOut",
+                  times: [0, 0.2, 0.5, 0.8, 1],
+                  repeat: Infinity,
+                  repeatDelay: 1,
+                }}
+              />
+
+              {/* Slogan Text */}
+              <motion.div className="slogan-text" style={{ transform: "translateY(-60px)" }} initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 1, duration: 1 }}>
+                <Typography
+                  sx={(theme) => ({
+                    fontFamily: "revert",
+                    fontSize: { xs: "32px", sm: "50px" },
+                    fontWeight: "bold",
+                    color: theme.palette.mode === "dark" ? "#e0e0e0" : "#222529", // Main text color
+                    textShadow: theme.palette.mode === "dark" ? "8px 0px 6px rgba(30, 30, 30, 0.8)" : "8px 0px 6px rgba(30, 30, 30, 0.4)",
+                  })}
+                >
+                  Insights
+                </Typography>
+                <Typography sx={(theme) => ({ fontFamily: "revert", fontSize: { xs: "16px", sm: "24px" }, fontWeight: "bold", color: theme.palette.mode === "dark" ? "#e0e0e0" : "#222529" })}>
+                  from our global experts on
+                </Typography>
+                <Typography
+                  sx={(theme) => ({ fontFamily: "revert", fontSize: { xs: "16px", sm: "24px" }, fontWeight: "bold", color: theme.palette.mode === "dark" ? "#00C853" : "#4d7553", display: "inline" })}
+                >
+                  climate
+                </Typography>
+                <Typography
+                  sx={(theme) => ({
+                    fontFamily: "revert",
+                    fontSize: { xs: "16px", sm: "24px" },
+                    fontWeight: "bold",
+                    color: theme.palette.mode === "dark" ? "#e0e0e0" : "#222529",
+                    display: "inline",
+                    marginLeft: 1,
+                  })}
+                >
+                  and
+                </Typography>
+                <Typography
+                  sx={(theme) => ({
+                    fontFamily: "revert",
+                    fontSize: { xs: "16px", sm: "24px" },
+                    fontWeight: "bold",
+                    color: theme.palette.mode === "dark" ? "#00C853" : "#4d7553",
+                    display: "inline",
+                    marginLeft: 1,
+                  })}
+                >
+                  South Asian agriculture
+                </Typography>
+              </motion.div>
+            </div>
           </div>
-        </div>
+        </Box>
       </div>
 
       <Box
