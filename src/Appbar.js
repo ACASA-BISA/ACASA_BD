@@ -18,8 +18,8 @@ import Translate from "./Translate";
 import LightTooltip from "./LightTooltip";
 import { useLocation, useNavigate, useParams, Link } from "react-router-dom";
 
-const pages = ["Home", "Explore Data", "Data at a glance", "Data Access", "Use Cases", "Resources", "About Us"];
-const pageid = ["home", "dashboard", "dataglance", "access", "usecases", "resources", "about"];
+const pages = ["Home", "Explore Data", "Data at a glance", /*"Data Access",*/ "Use Cases", "Resources", "About Us"];
+const pageid = ["home", "dashboard", "dataglance", /*"access",*/ "usecases", "resources", "about"];
 const AppBarHeight = "85px";
 
 const ToggleContainer = styled("div")(({ theme, mode }) => ({

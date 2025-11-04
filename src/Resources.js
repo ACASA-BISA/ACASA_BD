@@ -10,6 +10,7 @@ import Info from "./Acasa_Info";
 import Timeline2 from "./Acasa_timeline";
 import Glossary from "./Acasa_Glossary";
 import Methodology from "./Methodology";
+import Publications from "./Acasa_Publication";
 import StickyFooter from "./StickyFooter";
 import { Box, Typography } from "@mui/material";
 
@@ -62,8 +63,8 @@ export default function ResTabsData() {
   const mobileTabs = ["ACASA Posts", "Newsletter-Strides", "Glossary", "Methodology"];
 
   React.useEffect(() => {
-    if (tabFromURL === 4 || tabFromURL === 5) {
-      navigate(`?tab=0`); // Redirect to tab 0 if the user tries to access tab 4 or 5
+    if (tabFromURL === 4 ||tabFromURL === 5 || tabFromURL === 6) {
+      navigate(`?tab=0`); // Redirect to tab 0 if the user tries to access these tabs
     } else {
       setTabIndex(tabFromURL || 0);
     }
@@ -75,8 +76,8 @@ export default function ResTabsData() {
       return;
     }*/
 
-    if (index === 4 || index === 5) {
-      return; // Prevent navigation to tabs 4 and 5
+    if (index === 4 ||index === 5 || index === 6) {
+      return; // Prevent navigation to certain tabs
     }
     setTabIndex(index);
     navigate(`?tab=${index}`); // Update URL when user clicks a tab
@@ -111,6 +112,7 @@ export default function ResTabsData() {
           <TabItem disableRipple label={"Newsletter-Strides"} />
           <TabItem disableRipple label={"Glossary"} />
           <TabItem disableRipple label={"Methodology"} />
+          <TabItem disableRipple label={"Publications"} />
           {/*<TabItem disableRipple disabled={true} label={"ACASA Data Dive"} />
           <TabItem disableRipple disabled={true} label={"ACASA in News"} />*/}
         </Tabs>
@@ -118,8 +120,9 @@ export default function ResTabsData() {
         {tabIndex === 1 && <News></News>}
         {tabIndex === 2 && <Glossary></Glossary>}
         {tabIndex === 3 && <Methodology></Methodology>}
-        {tabIndex === 4 && <Info></Info>}
-        {tabIndex === 5 && <Timeline2></Timeline2>}
+        {tabIndex === 4 && <Publications></Publications>}
+        {tabIndex === 5 && <Info></Info>}
+        {tabIndex === 6 && <Timeline2></Timeline2>}
         <Snackbar
           open={openSnackbar}
           autoHideDuration={5000}
@@ -215,6 +218,7 @@ export default function ResTabsData() {
           {tabIndex === 1 && <News />}
           {tabIndex === 2 && <Glossary />}
           {tabIndex === 3 && <Methodology />}
+          {tabIndex === 4 && <Publications />}
         </Box>
       </Box>
     </div>
