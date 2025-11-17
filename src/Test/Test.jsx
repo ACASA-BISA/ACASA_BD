@@ -268,8 +268,9 @@ function Test() {
                 );
             setFilteredCommodities(filtered);
             if (filtered.length > 0 && (!selectedCommodityId || !filtered.some((c) => c.commodity_id === selectedCommodityId))) {
-                let index = +selectedCommodityTypeId === 1 ? 1 : 0;
-                setSelectedCommodityId(filtered[index]?.commodity_id || "");
+                {/*let index = +selectedCommodityTypeId === 1 ? 1 : 0;
+                setSelectedCommodityId(filtered[index]?.commodity_id || "");*/}
+                setSelectedCommodityId(filtered[0]?.commodity_id || "");
             }
         }
     }, [selectedCommodityTypeId, commodities, selectedCommodityId]);
