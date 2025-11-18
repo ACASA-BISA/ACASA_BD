@@ -660,7 +660,7 @@ function Test() {
                                         <Typography
                                             sx={{
                                                 textAlign: "center",
-                                                fontSize: "12px",
+                                                fontSize: "15px",
                                                 marginBottom: "10px",
                                                 color: "rgba(0, 0, 0, 0.54)",
                                                 fontWeight: "bold"
@@ -686,7 +686,7 @@ function Test() {
                                                                 PopperProps: { modifiers: [{ name: "flip", enabled: false }] },
                                                             }}
                                                             sx={(theme) => ({
-                                                                fontSize: "13px",
+                                                                fontSize: "15px",
                                                                 height: "26px",
                                                                 backgroundColor:
                                                                     theme.palette.mode === "dark"
@@ -704,7 +704,7 @@ function Test() {
                                                         >
                                                             <MenuItem
                                                                 value={0}
-                                                                sx={{ fontSize: "13px", paddingY: "2px" }}
+                                                                sx={{ fontSize: "15px", paddingY: "2px" }}
                                                             >
                                                                 Province
                                                             </MenuItem>
@@ -713,7 +713,7 @@ function Test() {
                                                                     key={a.state_id}
                                                                     value={a.state_id}
                                                                     sx={{
-                                                                        fontSize: "13px",
+                                                                        fontSize: "15px",
                                                                         paddingY: "2px",
                                                                         overflow: "hidden",
                                                                         textOverflow: "ellipsis",
@@ -744,7 +744,7 @@ function Test() {
                                                                 PaperProps: { sx: { maxHeight: 300 } },
                                                             }}
                                                             sx={(theme) => ({
-                                                                fontSize: "13px",
+                                                                fontSize: "15px",
                                                                 height: "26px",
                                                                 backgroundColor:
                                                                     theme.palette.mode === "dark"
@@ -759,14 +759,14 @@ function Test() {
                                                                 width: "220px"
                                                             })}
                                                         >
-                                                            <MenuItem value={0} sx={{ fontSize: "13px", paddingY: "2px" }}>
+                                                            <MenuItem value={0} sx={{ fontSize: "15px", paddingY: "2px" }}>
                                                                 District
                                                             </MenuItem>
                                                             {districts.map((d) => (
                                                                 <MenuItem
                                                                     key={d.district_id}
                                                                     value={d.district_id}
-                                                                    sx={{ fontSize: "13px", paddingY: "2px" }}
+                                                                    sx={{ fontSize: "15px", paddingY: "2px" }}
                                                                 >
                                                                     {d.district}
                                                                 </MenuItem>
@@ -900,7 +900,7 @@ function Test() {
                                                                 <span
                                                                     style={{
                                                                         fontFamily: "Poppins",
-                                                                        fontSize: "10px",
+                                                                        fontSize: "12px",
                                                                         fontStyle: "normal",
                                                                         fontWeight: 500,
                                                                         lineHeight: "normal",
@@ -944,7 +944,7 @@ function Test() {
                                                                 <span
                                                                     style={{
                                                                         fontFamily: "Poppins",
-                                                                        fontSize: "10px",
+                                                                        fontSize: "12px",
                                                                         fontStyle: "normal",
                                                                         fontWeight: 500,
                                                                         lineHeight: "normal",
@@ -1039,7 +1039,7 @@ function Test() {
                                                                                 <span
                                                                                     style={{
                                                                                         fontFamily: "Poppins",
-                                                                                        fontSize: "10px",
+                                                                                        fontSize: "12px",
                                                                                         fontStyle: "normal",
                                                                                         fontWeight: 500,
                                                                                         lineHeight: "normal",
@@ -1117,7 +1117,7 @@ function Test() {
                                                                         <span
                                                                             style={{
                                                                                 fontFamily: "Poppins",
-                                                                                fontSize: "10px",
+                                                                                fontSize: "12px",
                                                                                 fontStyle: "normal",
                                                                                 fontWeight: 500,
                                                                                 lineHeight: "normal",
@@ -1189,7 +1189,7 @@ function Test() {
                                                                     <span
                                                                         style={{
                                                                             fontFamily: "Poppins",
-                                                                            fontSize: "10px",
+                                                                            fontSize: "12px",
                                                                             fontStyle: "normal",
                                                                             fontWeight: 500,
                                                                             lineHeight: "normal",
@@ -1267,7 +1267,7 @@ function Test() {
                                                                         <span
                                                                             style={{
                                                                                 fontFamily: "Poppins",
-                                                                                fontSize: "10px",
+                                                                                fontSize: "12px",
                                                                                 fontStyle: "normal",
                                                                                 fontWeight: 500,
                                                                                 lineHeight: "normal",

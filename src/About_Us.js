@@ -100,11 +100,9 @@ export default function AboutUs() {
                   marginTop: 2,
                 })}
               >
-                Increasing climatic risks make it imperative to identify spatial and temporal risks that are likely to impact agriculture. Adaptation options are thus needed to mitigate the negative
-                impacts. The Borlaug Institute for South Asia (BISA) with support from Gates Foundation is working with national agriculture research systems in South Asia to develop the Atlas of
-                Climate Adaptation in South Asian Agriculture (ACASA).
+                There is an urgent need to identify strategies to manage increasing climate risks in agriculture. The Atlas of Climate Adaptation in South Asian Agriculture (ACASA) is a digital platform that comprehensively consolidates spatially explicit data on climate hazards, assessing their impact on smallholder populations, farms, crops, and livestock systems for the South Asian region. By evaluating the vulnerability of these populations, impact on region’s critical commodities, and the evidence around the effectiveness of gender informed adaptation options, ACASA-Sri Lanka empowers decision-makers with valuable insights through a comprehensive adaptation portfolio to guide strategic investments and policy formulations.
               </Typography>
-              <Typography
+              {/*<Typography
                 sx={(theme) => ({
                   color: theme.palette.mode === "dark" ? "#e0e0e0" : "#333333",
                   fontSize: "16px",
@@ -118,7 +116,7 @@ export default function AboutUs() {
                 that can facilitate improved investment targeting and priority setting, and support stakeholders' decision-making and investments in agricultural technologies, climate information
                 services, and policies. The intended beneficiaries of this Atlas include government agencies, insurance providers, researchers and service providers in aligned disciplines, agri-food
                 industries, international and national donors, and organizations focused on climate adaptation.
-              </Typography>
+              </Typography>*/}
               <Typography
                 sx={(theme) => ({
                   color: theme.palette.mode === "dark" ? "#e0e0e0" : "#333333",
@@ -149,7 +147,7 @@ export default function AboutUs() {
                 })}
               >
                 <Link href={`${process.env.PUBLIC_URL}/SL-ACASA Brochure_03112025.pdf`} underline="none" color="#4b9e44" target="_blank">
-                  ACASA Brochure
+                  ACASA, Sri Lanka Brochure
                 </Link>
               </Typography>
             </Box>
@@ -1044,7 +1042,7 @@ export default function AboutUs() {
                 marginBottom: 2,
               })}
             >
-              ACASA country team leads
+              ACASA country team lead and contact points
             </Typography>
             <Box
               sx={{
@@ -1227,6 +1225,50 @@ export default function AboutUs() {
                     })}
                   >
                     Deputy Director (Research), NRMC, Department of Agriculture, Sri Lanka
+                  </Typography>
+                </Box>
+              </Paper>
+              <Paper
+                sx={(theme) => ({
+                  m: 1,
+                  ml: 0,
+                  width: "21vw",
+                  height: "auto",
+                  backgroundColor: theme.palette.mode === "dark" ? "#322b32" : "#fff7ff",
+                })}
+                elevation={0}
+              >
+                <Box
+                  sx={{
+                    display: "flex",
+                    flexDirection: "column",
+                    textAlign: { sm: "center", md: "center" },
+                  }}
+                >
+                  <Typography
+                    sx={(theme) => ({
+                      color: theme.palette.mode === "dark" ? "#e0e0e0" : "#333333",
+                      fontSize: "15px",
+                      fontWeight: "bold",
+                      fontFamily: "revert",
+                      margin: 2,
+                      mb: 1,
+                    })}
+                  >
+                    A. G. Chandrapala
+                  </Typography>
+                  <Typography
+                    sx={(theme) => ({
+                      color: theme.palette.mode === "dark" ? "#e0e0e0" : "#333333",
+                      fontSize: "14px",
+                      fontFamily: "revert",
+                      margin: 0,
+                      marginRight: 3,
+                      marginLeft: 3,
+                      mb: 2,
+                    })}
+                  >
+                    Research Officer, NRMC, Department of Agriculture, Sri Lanka
                   </Typography>
                 </Box>
               </Paper>
