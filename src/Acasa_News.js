@@ -91,7 +91,7 @@ export default function News() {
               <a href={"https://mailchi.mp/cgiar.org/acasa-strides_issue02-bisa-4323746?e=ff48e11d75"} target="_blank" rel="noopener noreferrer">
                 <img
                   loading="lazy"
-                  src={"issue03.PNG"}
+                  src={`${process.env.PUBLIC_URL}/issue03.PNG`}
                   alt="news"
                   style={{
                     width: "120px", // Adjust size as needed
@@ -187,7 +187,7 @@ export default function News() {
               <a href={"https://mailchi.mp/cgiar.org/acasa-strides_issue02-bisa?e=3233d543a1"} target="_blank" rel="noopener noreferrer">
                 <img
                   loading="lazy"
-                  src={"issue02.png"}
+                  src={`${process.env.PUBLIC_URL}/issue02.png`}
                   alt="news"
                   style={{
                     width: "120px", // Adjust size as needed
@@ -283,7 +283,7 @@ export default function News() {
               <a href={"https://mailchi.mp/cgiar/south-asias-first-climate-adaptation-atlas?e=7dab12cfe5"} target="_blank" rel="noopener noreferrer">
                 <img
                   loading="lazy"
-                  src={"news.png"}
+                  src={`${process.env.PUBLIC_URL}/news.png`}
                   alt="news"
                   style={{
                     width: "120px", // Adjust size as needed

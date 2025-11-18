@@ -25,7 +25,7 @@ function createData(imgSrc, imgAlt, title, author, link, keywords = [], date) {
 
 const data = [
   createData(
-    "/Blog-14.jpeg",
+    `${process.env.PUBLIC_URL}/Blog-14.jpeg`,
     "Blog 1",
     "Finding resilience in the rains of Nawalapitiya, Kandy",
     "Riya Gupta, Communications Officer, BISA",
@@ -33,7 +33,7 @@ const data = [
     ["Women farmers", "climate", "resilience"]
   ),
   createData(
-    "/Blog-15.jpg",
+    `${process.env.PUBLIC_URL}/Blog-15.jpg`,
     "Blog 2",
     "Driving agricultural transformation through digital innovation",
     "Prasun Gangopadhyay, Borlaug Institute for South Asia (BISA)",
@@ -41,7 +41,7 @@ const data = [
     ["Digital agriculture", "remote sensing"]
   ),
   createData(
-    "/Blog-10.jpg",
+    `${process.env.PUBLIC_URL}/Blog-10.jpg`,
     "Blog 3",
     "Building capabilities of medium and large-scale Sri Lankan maize growers in agricultural risk management",
     "ASM Roshan, Agribusiness Development Centre, Department of Agriculture, Sri Lanka, and WMUK Rathnayake, Natural Resources Management Centre (NRMC), Department of Agriculture, Sri Lanka",
@@ -49,7 +49,7 @@ const data = [
     ["Maize,", "agribusiness"]
   ),
   createData(
-    "/Blog-11.jpg",
+    `${process.env.PUBLIC_URL}/Blog-11.jpg`,
     "Blog 4",
     "ACASA for empowering women-led social entrepreneurs in Nepal: Building climate-resilient forage for a sustainable livestock ecosystem",
     "Bhola Shrestha, Heifer International, Nepal, and Sunita Sanjyal, Nepal Agricultural Research Council, Nepal",
@@ -57,21 +57,21 @@ const data = [
     ["Capacity building,", "women"]
   ),
   createData(
-    "/Blog-13.jpg",
+    `${process.env.PUBLIC_URL}/Blog-13.jpg`,
     "Blog 5",
     "Strengthening the model of “Adaptation Clinic” through data-driven local level adaptation planning in Bangladesh",
     "Tausif Ahmed Qurashi, BRAC, Bangladesh, and Md. Abdus Salam, Bangladesh Agricultural Research Council (BARC), Bangladesh",
     "https://bisa.org/strengthening-the-model-of-adaptation-clinic-through-data-driven-local-level-adaptation-planning-in-bangladesh/",
     ["Adaptation,", "local-level planning"]
   ),
-  createData("blognew1.png", "Blog 6", "Greater successes through NARS partnerships", "Tess Russo, BMGF, Seattle, USA", "https://bisa.org/greater-successes-through-nars-partnerships/", [
+  createData(`${process.env.PUBLIC_URL}/blognew1.png`, "Blog 6", "Greater successes through NARS partnerships", "Tess Russo, BMGF, Seattle, USA", "https://bisa.org/greater-successes-through-nars-partnerships/", [
     "Partnership,",
     "NARS,",
     "ACASA,",
     "BISA",
   ]),
   createData(
-    "/blognew2.jpeg",
+    `${process.env.PUBLIC_URL}/blognew2.jpeg`,
     "Blog 7",
     "Gridded crop modelling to simulate impacts of climate change and adaptation benefits in ACASA",
     "Anooja Thomas, University of Florida, USA; Apurbo K Chaki, BARI, Bangladesh; Gerrit Hoogenboom, University of Florida, USA; and S Naresh Kumar, ICAR-IARI, India",
@@ -79,7 +79,7 @@ const data = [
     ["Crop models,", "simulations,", "adaptation"]
   ),
   createData(
-    "/blognew3.png",
+    `${process.env.PUBLIC_URL}/blognew3.png`,
     "Blog 8",
     "Harnessing econometric and statistical tools to support climate-resilient agriculture",
     "Kaushik Bora, BISA-CIMMYT, India and Prem Chand, ICAR-NIAP, India",
@@ -87,7 +87,7 @@ const data = [
     ["Econometrics,", "profitability,", "statistical models,", "adaptation"]
   ),
   createData(
-    "/blognew4.png",
+    `${process.env.PUBLIC_URL}/blognew4.png`,
     "Blog 9",
     "Unlocking insights from literature: Exploring adaptation options in ACASA",
     "Aniket Deo, BISA-CIMMYT, India; Niveta Jain, ICAR-IARI, India; Roshan B Ojha, NARC, Nepal; and Sayla Khandoker, Bangladesh",
@@ -95,7 +95,7 @@ const data = [
     ["SLR,", "adaptation options"]
   ),
   createData(
-    "/Blog-5.jpg",
+    `${process.env.PUBLIC_URL}/Blog-5.jpg`,
     "Blog 10",
     "A new Climate Adaptation Atlas to safeguard South Asian agriculture",
     "Bram Govaerts, DG, CIMMYT & BISA and Arun Kumar Joshi, CIMMYT Asia Regional Representative and MD BISA",
@@ -103,7 +103,7 @@ const data = [
     ["ACASA,", "BISA,", "CIMMYT"]
   ),
   createData(
-    "/Blog-1.jpg",
+    `${process.env.PUBLIC_URL}/Blog-1.jpg`,
     "Blog 11",
     "Adaptation Atlas is a positive step towards climate resilient agriculture",
     "Himanshu Pathak, Secretary (DARE) and Director General - ICAR, India",
@@ -111,7 +111,7 @@ const data = [
     ["ACASA,", "BISA,", "ICAR"]
   ),
   createData(
-    "/Blog-2.jpg",
+    `${process.env.PUBLIC_URL}/Blog-2.jpg`,
     "Blog 12",
     "Bangladesh to improve risk characterization at a granular level with Atlas",
     "Shaikh Mohammad Bokhtiar, Executive Chairman, BARC, Bangladesh",
@@ -119,7 +119,7 @@ const data = [
     ["ACASA,", "BISA,", "BARC"]
   ),
   createData(
-    "/Blog-3.jpg",
+    `${process.env.PUBLIC_URL}/Blog-3.jpg`,
     "Blog 13",
     "Atlas crucial to strengthen Nepal’s capacity to cope with climate change",
     "Dhruba Raj Bhattarai, Executive Director, NARC, Nepal",
@@ -127,7 +127,7 @@ const data = [
     ["ACASA,", "BISA,", "NARC"]
   ),
   createData(
-    "/Blog-4.jpg",
+    `${process.env.PUBLIC_URL}/Blog-4.jpg`,
     "Blog 14",
     "Climate Adaptation Atlas will support evidence-based solutions in Sri Lanka",
     "P. Malathy, DG-Agriculture, Sri Lanka",
@@ -172,7 +172,7 @@ export default function Card_Posts() {
               style={{
                 position: "absolute",
                 inset: 0,
-                backgroundImage: "url(acasa_post_banner3.jpg)",
+                backgroundImage: `url(${process.env.PUBLIC_URL}/acasa_post_banner3.jpg)`,
                 backgroundSize: "cover",
                 backgroundPosition: "center",
                 WebkitMaskImage: "linear-gradient(to right, rgba(0,0,0,1) 50%, rgba(0,0,0,0) 100%)",
@@ -320,7 +320,7 @@ export default function Card_Posts() {
           })}
         >
           <CardMedia
-            image="/blognew1.png"
+            image={`${process.env.PUBLIC_URL}/blognew1.png`
             sx={(theme) => ({
               width: "100%",
               height: 0,
@@ -376,7 +376,7 @@ export default function Card_Posts() {
           })}
         >
           <CardMedia
-            image="/blognew2.jpeg"
+            image={`${process.env.PUBLIC_URL}/blognew2.jpeg`
             sx={(theme) => ({
               width: "100%",
               height: 0,
@@ -431,7 +431,7 @@ Clicking the button triggers a function using onClick that sets blogs to true (s
           })}
         >
           <CardMedia
-            image="/blognew3.png"
+            image={`${process.env.PUBLIC_URL}/blognew3.png`
             sx={(theme) => ({
               width: "100%",
               height: 0,
@@ -489,7 +489,7 @@ Clicking the button triggers a function using onClick that sets blogs to true (s
           })}
         >
           <CardMedia
-            image="/blognew4.png"
+            image={`${process.env.PUBLIC_URL}/blognew4.png`
             sx={(theme) => ({
               width: "100%",
               height: 0,
@@ -537,7 +537,7 @@ Clicking the button triggers a function using onClick that sets blogs to true (s
           })}
         >
           <CardMedia
-            image="/Blog-5.jpg"
+            image={`${process.env.PUBLIC_URL}/Blog-5.jpg`
             sx={(theme) => ({
               width: "100%",
               height: 0,
@@ -585,7 +585,7 @@ Clicking the button triggers a function using onClick that sets blogs to true (s
           })}
         >
           <CardMedia
-            image="/Blog-1.jpg"
+            image={`${process.env.PUBLIC_URL}/Blog-1.jpg`
             sx={(theme) => ({
               width: "100%",
               height: 0,
@@ -652,7 +652,7 @@ Clicking the button triggers a function using onClick that sets blogs to true (s
             })}
           >
             <CardMedia
-              image="/Blog-2.jpg"
+              image={`${process.env.PUBLIC_URL}/Blog-2.jpg`
               sx={(theme) => ({
                 width: "100%",
                 height: 0,
@@ -701,7 +701,7 @@ Clicking the button triggers a function using onClick that sets blogs to true (s
             })}
           >
             <CardMedia
-              image="/Blog-3.jpg"
+              image={`${process.env.PUBLIC_URL}/Blog-3.jpg`
               sx={(theme) => ({
                 width: "100%",
                 height: 0,
@@ -749,7 +749,7 @@ Clicking the button triggers a function using onClick that sets blogs to true (s
             })}
           >
             <CardMedia
-              image="/Blog-4.jpg"
+              image={`${process.env.PUBLIC_URL}/Blog-4.jpg`
               sx={(theme) => ({
                 width: "100%",
                 height: 0,

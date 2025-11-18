@@ -146,15 +146,12 @@ function Test() {
                             admin_level_id,
                         }),
                     });
-
                     if (!districtRes.ok) throw new Error(`District GeoJSON error! Status: ${districtRes.status}`);
                     const districtData = await districtRes.json();
-
                     if (districtData.success && districtData.data) {
                         newGeojsonData.district = districtData.data;
                     }
                 }
-
                 setGeojsonData(newGeojsonData);
             } catch (err) {
                 console.error("Error fetching GeoJSON:", err);
@@ -209,7 +206,6 @@ function Test() {
     useEffect(() => {
         if (countries.length > 0) {
             const sriLanka = countries.find(c => c.country_id === 5);
-
             if (sriLanka) {
                 setSelectedCountryId(5);
                 getStates(5);
@@ -219,7 +215,6 @@ function Test() {
             }
         }
     }, [countries]);
-
     useEffect(() => {
         if (commodityTypes.length > 0 && !selectedCommodityTypeId) {
             setSelectedCommodityTypeId(commodityTypes[0].commodity_type_id);
@@ -338,13 +333,10 @@ function Test() {
             selectedDistrictId !== 0 ? "district" :
                 selectedStateId !== 0 ? "state" :
                     "country";
-
         const admin_level_id =
             selectedDistrictId !== 0 ? selectedDistrictId :
                 selectedStateId !== 0 ? selectedStateId :
                     selectedCountryId;
-
-
         let sub_layer_name = '';
         if (risk_id) {
             const selectedRisk = risks.find(r => r.risk_id === risk_id);
@@ -470,36 +462,28 @@ function Test() {
             return [];
         }
     };
-
     const handleCountryChange = () => { };
-
     const handleStateChange = async (e) => {
         const stateId = e.target.value;
         setSelectedStateId(stateId);
-
         if (stateId !== 0) {
             // fetch the district list for UI
             const res = await fetchDistricts(stateId);
             setDistricts(res);
-
             // use the local stateId variable to avoid stale state issues
             fetchGeojson("state", stateId);
         } else {
             setDistricts([]);
             setSelectedDistrictId(0);
-
             // If user cleared state, restore country-level geojson
             fetchGeojson("country", selectedCountryId);
         }
     };
-
     const handleDistrictChange = (e) => {
         const districtId = e.target.value;
         setSelectedDistrictId(districtId);
-
         fetchGeojson('district', districtId);
     };
-
     const handleCommodityTypeChange = (event) => {
         const newCommodityTypeId = event.target.value;
         setSelectedCommodityTypeId(newCommodityTypeId);
@@ -665,7 +649,7 @@ function Test() {
                                                 display: "inline-flex",
                                             }}
                                         >
-                                            <img src="/images/location.svg" alt="" />
+                                            <img src={`${process.env.PUBLIC_URL}/images/location.svg`} alt="" />
                                         </ListItemIcon>
                                         <ListItemText
                                             primary={<FormLabel style={{ textAlign: "left" }} className="formLabel">Region</FormLabel>}
@@ -684,7 +668,6 @@ function Test() {
                                         >
                                             Country: Sri Lanka
                                         </Typography>
-
                                         <List component="div" disablePadding>
                                             <div className="card w-100 bg-transparent border-0 text-start">
                                                 <div className="card-body">
@@ -779,7 +762,6 @@ function Test() {
                                                             <MenuItem value={0} sx={{ fontSize: "13px", paddingY: "2px" }}>
                                                                 District
                                                             </MenuItem>
-
                                                             {districts.map((d) => (
                                                                 <MenuItem
                                                                     key={d.district_id}
@@ -790,7 +772,6 @@ function Test() {
                                                                 </MenuItem>
                                                             ))}
                                                         </Select>
-
                                                     </FormControl>
                                                 </div>
                                             </div>
@@ -816,7 +797,7 @@ function Test() {
                                                 display: "inline-flex",
                                             }}
                                         >
-                                            <img src="/images/datatype.svg" alt="Data Type" />
+                                            <img src={`${process.env.PUBLIC_URL}/images/datatype.svg`} alt="Data Type" />
                                         </ListItemIcon>
                                         <ListItemText
                                             primary={
@@ -885,7 +866,7 @@ function Test() {
                                                 display: "inline-flex",
                                             }}
                                         >
-                                            <img src="/images/analysis.svg" alt="Analysis & Scale" />
+                                            <img src={`${process.env.PUBLIC_URL}/images/analysis.svg`} alt="Analysis & Scale" />
                                         </ListItemIcon>
                                         <ListItemText
                                             primary={<FormLabel style={{ textAlign: "left" }} className="formLabel">Analysis & Scale</FormLabel>}
@@ -1004,7 +985,7 @@ function Test() {
                                                 display: "inline-flex",
                                             }}
                                         >
-                                            <img src="/images/commodity.svg" alt="Commodity" />
+                                            <img src={`${process.env.PUBLIC_URL}/images/commodity.svg`} alt="Commodity" />
                                         </ListItemIcon>
                                         <ListItemText
                                             primary={<FormLabel style={{ textAlign: "left" }} className="formLabel">Commodity</FormLabel>}
@@ -1104,7 +1085,7 @@ function Test() {
                                                 display: "inline-flex",
                                             }}
                                         >
-                                            <img src="/images/risk.svg" alt="Risk" />
+                                            <img src={`${process.env.PUBLIC_URL}/images/risk.svg`} alt="Risk" />
                                         </ListItemIcon>
                                         <ListItemText
                                             primary={<FormLabel style={{ textAlign: "left" }} className="formLabel">Climate risk</FormLabel>}
@@ -1181,7 +1162,7 @@ function Test() {
                                                     display: "inline-flex",
                                                 }}
                                             >
-                                                <img src="/images/impact.svg" alt="Impact" />
+                                                <img src={`${process.env.PUBLIC_URL}/images/impact.svg`} alt="Impact" />
                                             </ListItemIcon>
                                             <ListItemText
                                                 primary={<FormLabel style={{ textAlign: "left!important" }} className="formLabel">Climate change impact</FormLabel>}
@@ -1251,7 +1232,7 @@ function Test() {
                                                 display: "inline-flex",
                                             }}
                                         >
-                                            <img src="/images/option.svg" alt="Adaptation" />
+                                            <img src={`${process.env.PUBLIC_URL}/images/option.svg`} alt="Adaptation" />
                                         </ListItemIcon>
                                         <ListItemText
                                             primary={<FormLabel style={{ textAlign: "left!important" }} className="formLabel">Adaptation</FormLabel>}

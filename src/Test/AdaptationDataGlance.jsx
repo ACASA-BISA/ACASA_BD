@@ -1251,11 +1251,11 @@ const DataGlance = () => {
         if (!countries.length) {
             return;
         }
-        
-    let countryId = 5;                    // DEFAULT = Sri Lanka
-    let admin_level = "country";          // Always start at country level
-    let admin_level_id = 5;
-    let showSelect = true;
+
+        let countryId = 5;                    // DEFAULT = Sri Lanka
+        let admin_level = "country";          // Always start at country level
+        let admin_level_id = 5;
+        let showSelect = true;
         if (country) {
             const countryName = country.toLowerCase().replace(/[-_]/g, " ");
             const matchedCountry = countries.find(

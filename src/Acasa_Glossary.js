@@ -790,8 +790,8 @@ export default function Glossary() {
           {Object.values(glossaryData)
             .flat()
             .filter((item) => item.term.toLowerCase().includes(searchTerm.toLowerCase())).length === 0 && (
-            <Typography sx={(theme) => ({ textAlign: "center", color: theme.palette.mode === "dark" ? theme.palette.text.secondary : "#777" })}>No results found.</Typography>
-          )}
+              <Typography sx={(theme) => ({ textAlign: "center", color: theme.palette.mode === "dark" ? theme.palette.text.secondary : "#777" })}>No results found.</Typography>
+            )}
         </Paper>
       </Box>
 
@@ -799,11 +799,11 @@ export default function Glossary() {
       <Box
         ref={Ref}
         sx={{
-      marginLeft: { xs: 0, md: "1%" },
-      width: { xs: "100%", md: "67%" }, // full width on mobile
-      paddingBottom: "100px",
-      marginTop: { xs: 3, md: 0 }, // add spacing on mobile
-    }}
+          marginLeft: { xs: 0, md: "1%" },
+          width: { xs: "100%", md: "67%" }, // full width on mobile
+          paddingBottom: "100px",
+          marginTop: { xs: 3, md: 0 }, // add spacing on mobile
+        }}
       >
         {console.log("Number of terms displayed:", sortedFilteredTerms.length)}
         {sortedFilteredTerms.length > 0 ? (
@@ -842,7 +842,7 @@ export default function Glossary() {
                 )}
               </Typography>
 
-              {item.image ? <img src={`/${item.image}`} alt={item.term} style={{ width: "5rem", height: "auto" }} loading="lazy" /> : null}
+              {item.image ? <img src={`${process.env.PUBLIC_URL}/${item.image}`} alt={item.term} style={{ width: "5rem", height: "auto" }} loading="lazy" /> : null}
             </Box>
           ))
         ) : (
