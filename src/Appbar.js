@@ -211,32 +211,6 @@ function ResponsiveAppBar({ validCountries }) {
       >
         <Box sx={{ display: "flex", flexDirection: "column", justifyContent: "center", paddingTop: isSkipTranslateHidden ? "12px" : "14px" }}>
           <Toolbar disableGutters sx={{ width: "100%", alignItems: "center" }}>
-            <Box sx={{ display: "flex", flexGrow: 0, flexDirection: "column" }}>
-              <Button
-                size="small"
-                color="inherit"
-                key="DeptAgri"
-                component="a"
-                href="https://doa.gov.lk/home-page/"
-                target="_blank"
-                sx={{ padding: 0 }}
-              >
-                <Avatar variant="square" alt="Remy Sharp" src={`${process.env.PUBLIC_URL}/Home_imgs/Sri Lanka Logos/Agri Logo_New copy.png`} sx={{ width: "auto", height: "60px" }} />
-
-              </Button>
-            </Box>
-            <Box
-              sx={{
-                display: "flex",
-                flexGrow: 0,
-                display: { xs: "none", md: "flex" },
-                flexDirection: "column",
-              }}
-            >
-              <ImgButton size="small" color="inherit" key="Agriplus">
-                <Avatar variant="square" alt="Remy Sharp" src={`${process.env.PUBLIC_URL}/Home_imgs/Sri Lanka Logos/Agri Plus-01-2-2.png`} sx={{ width: "auto", height: "50px" }} />
-              </ImgButton>
-            </Box>
             <Box
               sx={{
                 display: "flex",
@@ -254,7 +228,7 @@ function ResponsiveAppBar({ validCountries }) {
                 target="_blank"
                 sx={{ padding: 0 }}
               >
-                <Avatar variant="square" alt="Remy Sharp" src={`${process.env.PUBLIC_URL}/Home_imgs/Sri Lanka Logos/NRMC.png`} sx={{ width: "auto", height: "50px" }} />
+                <Avatar variant="square" alt="Remy Sharp" src={`${process.env.PUBLIC_URL}/Home_imgs/BD Logos/barc_logo.png`} sx={{ width: "auto", height: "50px" }} />
               </Button>
             </Box>
             <Box sx={{ display: "flex", flexGrow: 0, flexDirection: "column" }}>

@@ -15,7 +15,7 @@ function Test() {
     const { country } = useParams();
     const [open, setOpen] = useState(true);
     const [countries, setCountries] = useState([]);
-    const [selectedCountryId, setSelectedCountryId] = useState(2); // Sri Lanka
+    const [selectedCountryId, setSelectedCountryId] = useState(2); // Sri Lanka 5
     const [showCountrySelect, setShowCountrySelect] = useState(true);
     const [states, setStates] = useState([]);
     const [selectedStateId, setSelectedStateId] = useState(0);
@@ -205,8 +205,8 @@ function Test() {
     }, [selectedScopeId]);
     useEffect(() => {
         if (countries.length > 0) {
-            const sriLanka = countries.find(c => c.country_id === 2);    // Was 5
-            if (sriLanka) {
+            const desh = countries.find(c => c.country_id === 2);    // Was 5
+            if (desh) {
                 setSelectedCountryId(2);  // Was 5
                 getStates(2); // Was 5
                 setDisableStateFilter(false);
@@ -667,7 +667,7 @@ function Test() {
                                                  fontFamily:'Poppins',
                                             }}
                                         >
-                                            Country: Sri Lanka
+                                            Country: Bangladesh
                                         </Typography>
                                         <List component="div" disablePadding>
                                             <div className="card w-100 bg-transparent border-0 text-start">
@@ -708,7 +708,7 @@ function Test() {
                                                                 value={0}
                                                                 sx={{ fontSize: "14px", paddingY: "2px",  fontFamily:'Poppins', }}
                                                             >
-                                                                Province
+                                                                Division
                                                             </MenuItem>
                                                             {states.map((a) => (
                                                                 <MenuItem

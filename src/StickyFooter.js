@@ -151,7 +151,7 @@ export default function StickyFooter() {
           <Box sx={{ display: "flex", flexDirection: "row", fontFamily: "Poppins", }}>
             <Box sx={{ width: { xs: "100%", sm: "40%" }, margin: 6, fontFamily: "Poppins", }}>
               <Typography variant="h5" fontWeight={600} gutterBottom sx={{ color: "#ffffff", fontFamily: "Poppins", }}>
-                Contact NRMC
+                Contact BARC
               </Typography>
               <Table size="small" aria-label="a dense table" padding="none">
                 <TableBody>
@@ -163,10 +163,11 @@ export default function StickyFooter() {
                     </TableCell>
                     <TableCell align="left">
                       <Typography variant="subtitle1" sx={{ color: "#ffffff", fontWeight: "600", fontFamily: "Poppins", }} ml={2}>
-                        A.G.Chandrapala
+                        Hasan Md. Hamidur Rahman
                       </Typography>
                     </TableCell>
                   </TableRow>
+
                   <TableRow key="1" sx={{ "& td": { border: 0 } }}>
                     <TableCell align="left" sx={{ width: "70px" }}>
                       <Typography variant="subtitle1" sx={{ color: "#ffffff", fontFamily: "Poppins", }}>
@@ -175,26 +176,25 @@ export default function StickyFooter() {
                     </TableCell>
                     <TableCell align="left">
                       <Typography variant="subtitle1" sx={{ color: "#ffffff", fontWeight: "600", fontFamily: "Poppins", }} ml={2}>
-                        National Resources Management Centre (NRMC)
+                        Bangladesh Agricultural Research Council (BARC)
                       </Typography>
                     </TableCell>
                   </TableRow>
+
                   <TableRow key="2" sx={{ "& td": { border: 0 } }}>
                     <TableCell align="left"></TableCell>
                     <TableCell align="left">
                       <Typography variant="subtitle1" sx={{ color: "#ffffff", fontFamily: "Poppins", fontSize:'16px' }} ml={2}>
-                        Department of Agriculture
+                        BARC Complex
                       </Typography>
                     </TableCell>
                   </TableRow>
-                  <TableRow key="3" sx={{ "& td": { border: 0 } }}>
-                    <TableCell align="left"></TableCell>
-                  </TableRow>
+
                   <TableRow key="4" sx={{ "& td": { border: 0 } }}>
                     <TableCell align="left"></TableCell>
                     <TableCell align="left">
                       <Typography variant="subtitle1" sx={{ color: "#ffffff", fontFamily: "Poppins", }} ml={2}>
-                        Peradeniya - 20400, Sri Lanka
+                        Farmgate, Dhaka, Bangladesh
                       </Typography>
                     </TableCell>
                   </TableRow>
@@ -251,8 +251,8 @@ export default function StickyFooter() {
                     </TableCell>
                     <TableCell align="left">
                       <Typography variant="subtitle1" sx={{ color: "#fece2f", fontFamily: "Poppins", }} ml={2}>
-                        <Link color="inherit" href="mailto:nrmcperadeniyadoa@gmail.com">
-                          nrmcperadeniyadoa@gmail.com
+                        <Link color="inherit" href="mailto:h.rahman@barc.gov.bd.com">
+                          h.rahman@barc.gov.bd.com
                         </Link>
                       </Typography>
                     </TableCell>
@@ -470,7 +470,7 @@ export default function StickyFooter() {
                 sx={{ marginLeft: -5, marginRight: -1 }}
               />
             </ListItemButton>*/}
-            <ListItemButton sx={{ marginRight: -2, fontFamily: "Poppins",}} href="/#/usecase">
+            <ListItemButton sx={{ marginRight: -2, fontFamily: "Poppins",}} href="/#/usecases">
               <ListItemIcon sx={{ color: "#fece2f", fontSize: "15px", fontFamily: "Poppins", }}>&#9670;</ListItemIcon>
               <ListItemText
                 primary="Use Cases"

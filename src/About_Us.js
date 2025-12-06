@@ -100,7 +100,7 @@ export default function AboutUs() {
                   marginTop: 2,
                 })}
               >
-                There is an urgent need to identify strategies to manage increasing climate risks in agriculture. The Atlas of Climate Adaptation in South Asian Agriculture (ACASA) is a digital platform that comprehensively consolidates spatially explicit data on climate hazards, assessing their impact on smallholder populations, farms, crops, and livestock systems for the South Asian region. By evaluating the vulnerability of these populations, impact on region’s critical commodities, and the evidence around the effectiveness of gender informed adaptation options, ACASA-Sri Lanka empowers decision-makers with valuable insights through a comprehensive adaptation portfolio to guide strategic investments and policy formulations.
+                There is an urgent need to identify strategies to manage increasing climate risks in agriculture. The Atlas of Climate Adaptation in South Asian Agriculture (ACASA) is a digital platform that comprehensively consolidates spatially explicit data on climate hazards, assessing their impact on smallholder populations, farms, crops, and livestock systems for the South Asian region. By evaluating the vulnerability of these populations, impact on region’s critical commodities, and the evidence around the effectiveness of gender informed adaptation options, ACASA-Bangladesh empowers decision-makers with valuable insights through a comprehensive adaptation portfolio to guide strategic investments and policy formulations.
               </Typography>
               {/*<Typography
                 sx={(theme) => ({
@@ -147,7 +147,7 @@ export default function AboutUs() {
                 })}
               >
                 <Link href={`${process.env.PUBLIC_URL}/SL-ACASA Brochure_03112025.pdf`} underline="none" color="#4b9e44" target="_blank">
-                  ACASA, Sri Lanka Brochure
+                  ACASA, Bangladesh Brochure
                 </Link>
               </Typography>
             </Box>
@@ -301,7 +301,7 @@ export default function AboutUs() {
                 marginBottom: 2,
               })}
             >
-              Partners and Contributors in Sri Lanka
+              Partners and Contributors in Bangladesh
             </Typography>
 
             <Box
@@ -444,7 +444,7 @@ export default function AboutUs() {
                     elevation={0}
                   >
                     <Box sx={{ display: "flex", flexDirection: "column", textAlign: "center" }}>
-                      <img src={`${process.env.PUBLIC_URL}/south-asia-4.svg`} style={logoStyle3} alt="risk" loading="lazy" />
+                      <img src={`${process.env.PUBLIC_URL}/Home_imgs/BD Logos/barc_logo.png`} style={logoStyle3} alt="risk" loading="lazy" />
                       <Typography
                         sx={(theme) => ({
                           color: theme.palette.mode === "dark" ? "#e0e0e0" : "#333333",
@@ -455,13 +455,13 @@ export default function AboutUs() {
                           marginLeft: 3,
                         })}
                       >
-                        Natural Resources Management Center (NRMC), Sri Lanka
+                        Bangladesh Agricultural Research Council (BARC), Bangladesh
                       </Typography>
                     </Box>
                   </Paper>
                 </Link>
 
-                <PartnersContributors country="sriLanka" />
+                <PartnersContributors country="bangladesh" />
               </Box>
             </Box>
 
@@ -650,7 +650,7 @@ export default function AboutUs() {
                 fontFamily: "Poppins",
               })}
             >
-              ACASA advisory panel
+              ACASA Advisory Panel
             </Typography>
             <Typography
               sx={(theme) => ({
@@ -1044,7 +1044,7 @@ export default function AboutUs() {
                 marginBottom: 2,
               })}
             >
-              ACASA country team lead and contact points
+              ACASA Country Team Lead and Contact Points
             </Typography>
             <Box
               sx={{
@@ -1213,7 +1213,7 @@ export default function AboutUs() {
                       mb: 1,
                     })}
                   >
-                    Sumudu Senanayake
+                    Hasan Md. Hamidur Rahman
                   </Typography>
                   <Typography
                     sx={(theme) => ({
@@ -1226,54 +1226,11 @@ export default function AboutUs() {
                       mb: 2,
                     })}
                   >
-                    Deputy Director (Research), NRMC, Department of Agriculture, Sri Lanka
+                    Director (Computer & GIS), BARC, Bangladesh
                   </Typography>
                 </Box>
               </Paper>
-              <Paper
-                sx={(theme) => ({
-                  m: 1,
-                  ml: 0,
-                  width: "21vw",
-                  height: "auto",
-                  backgroundColor: theme.palette.mode === "dark" ? "#322b32" : "#fff7ff",
-                })}
-                elevation={0}
-              >
-                <Box
-                  sx={{
-                    display: "flex",
-                    flexDirection: "column",
-                    textAlign: { sm: "center", md: "center" },
-                  }}
-                >
-                  <Typography
-                    sx={(theme) => ({
-                      color: theme.palette.mode === "dark" ? "#e0e0e0" : "#333333",
-                      fontSize: "15px",
-                      fontWeight: "500",
-                      fontFamily: "Poppins",
-                      margin: 2,
-                      mb: 1,
-                    })}
-                  >
-                    A. G. Chandrapala
-                  </Typography>
-                  <Typography
-                    sx={(theme) => ({
-                      color: theme.palette.mode === "dark" ? "#e0e0e0" : "#333333",
-                      fontSize: "18px",
-                      fontFamily: "Poppins",
-                      margin: 0,
-                      marginRight: 3,
-                      marginLeft: 3,
-                      mb: 2,
-                    })}
-                  >
-                    Director, NRMC, Department of Agriculture, Sri Lanka
-                  </Typography>
-                </Box>
-              </Paper>
+             
             </Box>
             <Typography
               sx={(theme) => ({
@@ -1285,7 +1242,7 @@ export default function AboutUs() {
                 marginBottom: 2,
               })}
             >
-              ACASA core team @ BISA
+              ACASA core team @ BARC
             </Typography>
             <Box
               sx={{
@@ -1304,7 +1261,8 @@ export default function AboutUs() {
                   fontWeight: "500",
                 })}
               >
-                1. Pramod Aggarwal, Project Leader, ACASA; Regional Program Leader
+                1. Hasan Md. Hamidur Rahman, Director (Computer & GIS), BARC
+                 and Natioanl Program Leader, ACASA, Bangladesh
               </Typography>
               <Typography
                 sx={(theme) => ({
@@ -1314,7 +1272,7 @@ export default function AboutUs() {
                   fontFamily: "Poppins",
                 })}
               >
-                2. Paresh Shirsath, Senior Scientist, Climate Adaptation
+                2. Dr. Golam Mahboob, Chief Scientific Officer, NRM Division, BARC
               </Typography>
               <Typography
                 sx={(theme) => ({
@@ -1324,7 +1282,7 @@ export default function AboutUs() {
                   fontFamily: "Poppins",
                 })}
               >
-                3. Prasun Gangopadhyay, Research Lead, Digital Agriculture
+                3. Hasan Mahmud, Senior System Analyst, Computer & GIS Unit, BARC
               </Typography>
               <Typography
                 sx={(theme) => ({
@@ -1334,79 +1292,9 @@ export default function AboutUs() {
                   fontFamily: "Poppins",
                 })}
               >
-                4. Sanjoy Bandopadhyay, Sr. Agronomist & Climate Adaptation Expert
+                4. Dr. Abdus Salam, Principal Scientific Officer, AERS Division, BARC
               </Typography>
-              <Typography
-                sx={(theme) => ({
-                  color: theme.palette.mode === "dark" ? "#c4c4c4" : "#111111",
-                  fontWeight: "normal",
-                  fontSize: "18px",
-                  fontFamily: "Poppins",
-                })}
-              >
-                5. Anasuya Barik, Data Analyst
-              </Typography>
-              <Typography
-                sx={(theme) => ({
-                  color: theme.palette.mode === "dark" ? "#c4c4c4" : "#111111",
-                  fontWeight: "normal",
-                  fontSize: "18px",
-                  fontFamily: "Poppins",
-                })}
-              >
-                6. Aniket Deo, Bioeconomic Modeler
-              </Typography>
-              <Typography
-                sx={(theme) => ({
-                  color: theme.palette.mode === "dark" ? "#c4c4c4" : "#111111",
-                  fontWeight: "normal",
-                  fontSize: "18px",
-                  fontFamily: "Poppins",
-                })}
-              >
-                7. Kaushik Bora, Agricultural Economist
-              </Typography>
-              <Typography
-                sx={(theme) => ({
-                  color: theme.palette.mode === "dark" ? "#c4c4c4" : "#111111",
-                  fontWeight: "normal",
-                  fontSize: "18px",
-                  fontFamily: "Poppins",
-                })}
-              >
-                8. Riya Gupta, Communication Officer
-              </Typography>
-              <Typography
-                sx={(theme) => ({
-                  color: theme.palette.mode === "dark" ? "#c4c4c4" : "#111111",
-                  fontWeight: "normal",
-                  fontSize: "18px",
-                  fontFamily: "Poppins",
-                })}
-              >
-                9. Saumya Singh, Data Analyst & Software Developer
-              </Typography>
-              <Typography
-                sx={(theme) => ({
-                  color: theme.palette.mode === "dark" ? "#c4c4c4" : "#111111",
-                  fontWeight: "normal",
-                  fontSize: "18px",
-                  fontFamily: "Poppins",
-                })}
-              >
-                10. Uttam Puri Goswami, Data Analyst
-              </Typography>
-              <Typography
-                sx={(theme) => ({
-                  color: theme.palette.mode === "dark" ? "#c4c4c4" : "#111111",
-                  fontWeight: "normal",
-                  fontSize: "18px",
-                  fontFamily: "Poppins",
-                })}
-              >
-                11. Purvanii Pragya, WebGIS Developer
-              </Typography>
-            </Box>
+              </Box>
           </Box>
         </Box>
       </Box>
