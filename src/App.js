@@ -26,8 +26,8 @@ function App() {
   const apiUrl = process.env.REACT_APP_API_URL;
   // Redirect if not in the subdirectory
   useEffect(() => {
-    if (!window.location.pathname.startsWith('/srilanka')) {
-      window.location.href = '/srilanka' + window.location.hash;
+    if (!window.location.pathname.startsWith('/bangladesh')) {     // Was srilanka
+      window.location.href = '/bangladesh' + window.location.hash; // Was srilanka 
     }
   }, []);
   // Fetch valid countries from API
